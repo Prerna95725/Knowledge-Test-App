@@ -1,0 +1,42 @@
+export const Questions = [
+  {
+    prompt: "Which of the following is the correct name of React.js?",
+    optionA: "React",
+    optionB: "React.js",
+    optionC: "ReactJS",
+    optionD: "All of the above",
+    asnwer: "optionD",
+  },
+  {
+    prompt: "Which of the following command is used to install create-react-app?",
+    optionA: "npm install -g create-react-app",
+    optionB: "npm install create-react-app",
+    optionC: "npm install -f create-react-app",
+    optionD: "install -g create-react-app",
+    asnwer: "optionA",
+  },
+  {
+    prompt: "What of the following is used in React.js to increase performance?",
+    optionA: "Original DOM",
+    optionB: "Virtual DOM",
+    optionC: "Both A and B.",
+    optionD: "None of the above.",
+    asnwer: "optionB",
+  },
+  {
+    prompt: "Which of the following keyword is used to create a class inheritance?",
+    optionA: "Create",
+    optionB: "Inherits",
+    optionC: "Extends",
+    optionD: "This",
+    asnwer: "optionC",
+  },
+  {
+    prompt: "What are the two ways to handle data in React?",
+    optionA: "State & Props",
+    optionB: "Services & Components",
+    optionC: "State & Services",
+    optionD: "State & Component",
+    asnwer: "optionA",
+  },
+];

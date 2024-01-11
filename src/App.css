@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Menu {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgb(149, 160, 216, 1.0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu input, button {
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition-duration: 0.4s;
+}
+
+.Title{
+  color:black;
+  font-family: serif;
+}
+
+button:hover {
+  cursor: pointer;
+  
+}
+
+.startQuiz:hover{
+  background-color: lightgreen;
+ transform:scale(0.97);
+}
+
+#optionButton:hover{
+  background-color:rgba(0, 255, 0, 0.3);
+  color:white;
+
+
+}
+
+#optionButton:active{
+  transform:scale(0.97);
+  background-color: blue;
+  
+}
+
+.Quiz {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgb(149, 160, 216, 1.0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu, .Quiz, .EndScreen h1 {
+  color: white;
+}
+
+.EndScreen {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nextQuestion {
+  width: 200px;
+  background-color: grey;
+
+}
+
+#nextQuestion:hover{
+  transform:scale(0.97);
+}
+
+h3 {
+  color: #ffffff;
+
+}
