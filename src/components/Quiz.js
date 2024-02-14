@@ -91,7 +91,7 @@ function Quiz() {
 
      
 <>
-        <button onClick={nextQuestion} id="nextQuestion">
+        <button onClick={nextQuestion} id="nextQuestion" disabled={!chooseOption}>
           Next Question
         </button>
         
