@@ -6,11 +6,15 @@
   align-items: center;
   flex-direction: column;
 }
+.headline{
+  font-family: Georgia, serif
+}
 
 .Menu {
   width: 500px;
   height: 500px;
   border-radius: 10px;
+  border-top: black;
   background-color: rgb(149, 160, 216, 1.0);
   display: flex;
   flex-direction: column;
@@ -50,7 +54,7 @@ button:hover {
 
 }
 
-#optionButton:active{
+#optionButton:active,{
   transform:scale(0.97);
   background-color: blue;
   
@@ -82,9 +86,17 @@ button:hover {
   align-items: center;
 }
 
+.logo{
+  width: 180px;
+  height: 120px;
+}
+
 #nextQuestion {
   width: 200px;
-  background-color: grey;
+
+  color: black;
+  border-color: red;
+  border-style: solid;
 
 }
 
@@ -95,4 +107,16 @@ button:hover {
 h3 {
   color: #ffffff;
 
+}
+
+.pass{
+  color:white;
+  text-shadow: white;
+}
+.fail{
+  color:white;
+}
+
+.question{
+  font-size: 20px;
 }

@@ -1,15 +1,18 @@
 import "../App.css";
-import { useContext } from "react";
+import { useContext,useState } from "react";
 import { GameStateContext } from "../helpers/Contexts";
 
 function Menu() {
   const { gameState, setGameState, userName, setUserName } = useContext(
     GameStateContext
   );
+
   const submit=(e)=>{
     e.preventDefault();
     if(userName === ''){
       alert("Sorry!!! Fill your Name First...");
+    }else if(userName.trim().length<=3){
+      alert("Name should be more than 3 letter");
     }else{
       setGameState("playing");
     }
@@ -27,12 +30,13 @@ function Menu() {
           setUserName(event.target.value);
         }}
       />
+      
       <button className="startQuiz">
         Start Quiz
       </button>
     </div>
     </form>
-    </div>
+        </div>
   );
 }
 

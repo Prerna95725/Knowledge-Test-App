@@ -21,6 +21,11 @@ const EndScreen = () => {
       <h1>
         {score} / {Questions.length}
       </h1>
+      <span>
+      {
+        (score>=4 ? <p className="pass">PASS</p>:<p className="fail">FAIL</p>)
+      }
+      </span>
       <button onClick={restartQuiz}>Restart Quiz</button>
     </div>
   );

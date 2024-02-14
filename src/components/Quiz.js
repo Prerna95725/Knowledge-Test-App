@@ -8,12 +8,13 @@ import { GameStateContext } from "../helpers/Contexts";
 function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [optionChosen, setOptionChosen] = useState("");
+  const [questionNumber,setQuestionNumber] = useState(1);
+
 
   const { score, setScore, gameState, setGameState } = useContext(
     GameStateContext
   );
 
-  const {active,setActive}=useState(false);
 
   const {  userName, setUserName } = useContext(
     GameStateContext
@@ -22,7 +23,7 @@ function Quiz() {
   const chooseOption = (option) => {
     
     setOptionChosen(option);
-
+    
   };
 
   const nextQuestion = () => {
@@ -31,7 +32,10 @@ function Quiz() {
     }
     
     setCurrentQuestion(currentQuestion + 1);
+
+    setQuestionNumber(questionNumber+1);
   };
+ 
 
   const finishQuiz = () => {
     if (Questions[currentQuestion].asnwer == optionChosen) {
@@ -43,7 +47,8 @@ function Quiz() {
   return (
     <div className="Quiz">
      <p>Good Luck! <b>{userName}</b></p>
-      <h1>{Questions[currentQuestion].prompt}</h1>
+     <p>{questionNumber} of {Questions.length}</p>
+      <h1 className="question">{Questions[currentQuestion].prompt}</h1>
       <div className="questions">
         <button id="optionButton"
           onClick={() => {
@@ -83,9 +88,15 @@ function Quiz() {
           Finish Quiz
         </button>
       ) : (
+
+     
+<>
         <button onClick={nextQuestion} id="nextQuestion">
           Next Question
         </button>
+        
+
+</>
       )}
     </div>
   );

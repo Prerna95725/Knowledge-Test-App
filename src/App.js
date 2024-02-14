@@ -1,6 +1,8 @@
 import "./App.css";
 import Menu from "./components/Menu";
 import Quiz from "./components/Quiz";
+import img1 from './images/quiz.jpg'
+ 
 import EndScreen from "./components/EndScreen";
 import { useState } from "react";
 import { GameStateContext } from "./helpers/Contexts";
@@ -12,7 +14,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Quiz App</h1>
+      
+      <img className="logo" src={img1} alt=""/>
       
       <GameStateContext.Provider
         value={{
